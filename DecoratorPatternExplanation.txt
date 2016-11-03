@@ -1,0 +1,9 @@
+The Decorator Pattern is a design pattern which used a main interface class which works in some ways like an Abstract Class but instead of the main interface class implementing, the classes which create instances of their own type of this class implement the main interface class.
+
+So in my example there is a main interface class - 'Warrior' - with the method fight(), then I have two classes which implement 'Warrior' - 'Viking' and 'Gaul', both of which override the fight() method with their own kind of fight() method.
+
+The abstract class 'WarriorDecorator' also implements the 'Warrior' class and creates a new kind of warrior called 'decoratedWarrior', with its own fight method, which does not override the fight method from the 'Warrior' class but is 'decoratedWarrior.fight();'.
+
+'WarriorDecorator' becomes a superclass of 'AmphibiousWarriorDecorator' and can create a new type of amphibious Gaul and Viking Warrior whith a different fight() method.
+
+The Decorator Pattern works like a wrapper allowing new types of a class to be created without affecting the orginal classes themselves.
